@@ -688,8 +688,31 @@
             transition: .5s;
         }
         &__box {
+            position: relative;
+            left: 46px;
             width: 482px;
-            margin: -70px auto 0 auto;
+            margin: -60px 0 0;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 100px;
+                bottom: -8px;
+                left: -8px;
+                width: 8px;
+                background-position: left bottom;
+                background-image:repeating-linear-gradient(-45deg,#968F87, #968F87 2px,transparent 0, transparent 5px);
+            }
+            &::after {
+                background-repeat: repeat;
+                position: absolute;
+                content: '';
+                right: 112px;
+                left: 0;
+                bottom: -8px;
+                height: 8px;
+                background-position: left bottom;
+                background-image:repeating-linear-gradient(-45deg,#968F87, #968F87 2px,transparent 0, transparent 5px);
+            }
         }
         &__content {
             position: relative;
