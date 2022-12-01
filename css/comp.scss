@@ -1,0 +1,297 @@
+.c-underYellow::after {
+    position: absolute;
+    content: '';
+    bottom: 0px;
+    left: 50%;
+    width: 70px;
+    height: 4px;
+    background-color: #eae258;
+}
+
+/*menu arrow*/
+.c-arrow{
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c-arrow:before,
+.c-arrow:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 1px;
+    background: #000;
+}
+.c-arrow:before{
+    width: 25px;
+    transform: translate(-5px, -10px);
+}
+.c-arrow:after{
+    width: 8px;
+    transform-origin: right center;
+    transform: translate(-5px, -10px) rotate(50deg);
+}
+.c-arrow2{
+    display: inline-block;
+    top:30px;
+    left: 40px;
+    transition: .5s;
+}
+.c-arrow2:before,
+.c-arrow2:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 1px;
+    background: #000;
+}
+.c-arrow2:before{
+    width: 60px;
+    transform: translate(-5px, -10px);
+}
+.c-arrow2:after{
+    width: 20px;
+    transform-origin: right center;
+    transform: translate(-5px, -10px) rotate(50deg);
+}
+.c-arrow3{
+    position: absolute;
+    width: 60px;
+    top:30px;
+    left: -20px;
+    transition: .5s;
+}
+.c-arrow3:before,
+.c-arrow3:after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    background: #000;
+}
+.c-arrow3:before{
+    width: 60px;
+    transform: translate(-5px, -10px);
+}
+.c-arrow3:after{
+    width: 20px;
+    transform-origin: right center;
+    transform: translate(-5px, -10px) rotate(50deg);
+}
+.c-arrow__wrap {
+    position: relative;
+}
+.c-arrow__box {
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 100px;
+    transform: rotate(45deg);
+    &::before {
+        position: absolute;
+        left: 13px;
+        bottom: 13px;
+        width: 0;
+        height: 100%;
+        background-color: #eae258;
+        content: "";
+        transition: width 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+    }
+}
+
+.c-arrow__circle {
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #eae258;
+    transition: 0.5s;
+}
+
+/*marker*/
+/*アニメーション前*/
+.c-marker {
+    padding: 0 5px;
+    background-image: linear-gradient(#eae258, #eae258);
+    background-size: 0 30%;/*幅をゼロにしておく*/
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    transition: .8s;
+}
+/*アニメーション後*/
+.c-marker.activeMarker {
+    background-size: 100% 30%;/*JSからクラスactiveを付与されたときに背景の幅を全体に広げる*/
+}
+
+
+/*under line center*/
+.c-sec__ttl {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    width: fit-content;
+    font-size: 31px;
+    letter-spacing: .1em;
+    font-family: 'Kiwi Maru', serif;
+    & br {
+        display: none;
+    }
+}
+.c-ulineCenter {
+    position: relative;
+}
+.c-ulineCenter::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 4px;
+    background: #eae258;
+    transition: all 1s;
+    transition-delay: 0.4s;
+}
+.c-ulineCenter.activeLine::after {
+    width: 40px;
+}
+
+/*sec ttl appeal*/
+.c-sec__ttlFade{
+    -webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    opacity: 0;
+    &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -50px;
+        transform: translateX(-50%);
+        background-image: url(../assets/icon/pika.PNG);
+        width: 51px;
+        height: 31px;
+        background-size: 51px 31px;
+        background-repeat: no-repeat;
+    }
+}
+.activeFade{
+    opacity: 1;
+}
+.c-slideLeft {
+    opacity: 0;
+    transform: translate(-20px, 0);
+    transition: all 1s ease-out;
+}
+.c-slideLeftHow {
+    opacity: 0;
+    transform: translate(-20px, 0);
+    transition: all 1s ease-out;
+}
+
+.c-slideTop {
+	opacity: 0;
+	transform: translate(0, -20px);
+	transition: all 1s ease-out;
+    transition-delay: .9s;
+}
+.c-slideBottom {
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: 1s ease-out;
+}
+.c-slideBottom2 {
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: 1s ease-out;
+    transition-delay: .3s;
+}
+.c-slideBottomHow {
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: 1s ease-out;
+}
+
+.activeBg {
+    opacity: 1;
+}
+.c-btn__detail {
+    border: 1px solid #000;
+    background-color: #fff;
+    transition: background-color 0.3s;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 68px;
+    width: 280px;
+    height: 60px;
+    &::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 15px;
+        bottom: -9px;
+        left: -9px;
+        width: 8px;
+        background-position: left bottom;
+        background-image:repeating-linear-gradient(-45deg,#968F87, #968F87 2px,transparent 0, transparent 5px);
+    }
+    &::after {
+        z-index: -1;
+        background-repeat: repeat;
+        position: absolute;
+        content: '';
+        right: 30px;
+        left:-1px;
+        bottom: -9px;
+        height: 8px;
+        background-position: left bottom;
+        background-image:repeating-linear-gradient(-45deg,#968F87, #968F87 2px,transparent 0, transparent 5px);
+    }
+}
+.c-btn__detailJs {
+    background-color: #eae258 !important;
+    transition: background-color  0.3s;
+}
+.c-btn__detailLink {
+    font-family: 'Kiwi Maru', serif;
+    color: #000;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c-arrow4 {
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    transition: 0.2s;
+}
+.c-arrow5 {
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    transition: 0.2s;
+    &::before {
+        width: 45px ;
+        transform: translate(-5px, -10px);
+    }
+    &::after {
+        width: 15px ;
+        transform-origin: right center;
+        transform: translate(-5px, -10px) rotate(50deg);
+    }
+}
