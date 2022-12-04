@@ -129,9 +129,6 @@
   .p-headerFix__listNav li a div img {
     margin-top: 8px;
     height: 15px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
   }
   .p-headerFix__preview {
     display: none;
@@ -317,9 +314,6 @@
   .p-header__listNav li a div img {
     margin-top: 8px;
     height: 15px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
   }
   .p-header__lastChild::before {
     position: absolute;
@@ -458,9 +452,7 @@
   }
   .p-concept__img {
     height: 270px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    /*width: fit-content;*/
     position: absolute;
     top: 100px;
     left: 650px;
@@ -482,9 +474,7 @@
   .p-possible h2 {
     position: relative;
     margin: 0 auto;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    /*width: fit-content;*/
     font-size: 31px;
     letter-spacing: 0.1em;
     font-family: "Kiwi Maru", serif;
@@ -530,6 +520,7 @@
   }
   .p-how__ttlFade::before {
     position: relative !important;
+    top: -30px !important;
     background-image: url(../assets/icon/pika-w.PNG) !important;
   }
   .p-how__ttlFade::after {
@@ -570,7 +561,8 @@
     height: 200px;
     border-radius: 100px;
     background-color: #FFF;
-    outline: 3px solid #B6B771;
+    /*outline: 3px solid #B6B771;*/
+    border: 3px solid #B6B771;
   }
   .p-how__circle p {
     text-align: center;
@@ -600,9 +592,7 @@
   }
   .p-how__enText {
     height: 30px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    /*width: fit-content;*/
     margin-top: 20px;
   }
   .p-how__arrow {
@@ -800,6 +790,9 @@
     transform-origin: right center;
     transform: translate(-5px, -10px) rotate(50deg);
   }
+  .p-service__detail {
+    top: 47px !important;
+  }
   .p-service__gridItem:hover .p-service__img {
     top: -30px;
   }
@@ -940,6 +933,13 @@
        object-fit: cover;
     -o-object-position: left bottom;
        object-position: left bottom;
+    transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  .p-living__changeImage1:not(.is-activeBg) {
+    opacity: 0;
+  }
+  .p-living__changeImage2:not(.is-activeBg) {
+    opacity: 0;
   }
   .p-living__gridWrap {
     position: relative;
@@ -1136,9 +1136,7 @@
     overflow: hidden;
     width: 200px;
     left: -10px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    /*height: fit-content;*/
   }
   .p-inquiry__left h2 {
     position: relative;

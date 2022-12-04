@@ -37,7 +37,6 @@
                 opacity: 0;
                 animation: change-img-anim 24s infinite;
                 & img {
-                    min-width: 460px !important;
                     width: 100vw;
                     height: 100vh;
                     object-fit: cover;
@@ -470,7 +469,7 @@
                     & img {
                         margin-left: 5px;
                         height: 10px;
-                        width: fit-content;
+                        /*width: fit-content;*/
                     }
                 }
             }
@@ -633,13 +632,18 @@
             padding: 0 20px;
         }
         & h2 {
+            text-align: center;
             position: relative;
-            margin-top: 10px !important;
             margin: 0 auto;
-            width: fit-content;
-            font-size: 18px;
+            letter-spacing: 2 !important;
+            white-space: nowrap;
+            line-height: 28px;
+            font-size: min(5vw,20px) !important;
             color: #333;
-            font-family: 'Kosugi Maru', sans-serif;
+            font-family: 'Kosugi Maru', sans-serif !important;
+            & br {
+                display: block !important;
+            }
         }
         & p {
             margin: 10px auto 0 auto;
@@ -678,7 +682,7 @@
         text-align: center;
         position: relative;
         margin: 0 auto;
-        width: fit-content;
+        width: 315px;
         letter-spacing: 2 !important;
         line-height: 28px;
         font-size: 20px !important;
@@ -765,7 +769,8 @@
             height: 37vw;
             border-radius: 50%;
             background-color: #FFF;
-            outline: 0.5vw solid #B6B771;
+            /*outline: 0.5vw solid #B6B771;*/
+            border: 0.5vw solid #B6B771;
             & p {
                 text-align: center;
                 margin-top: 2vw;
@@ -795,7 +800,7 @@
         }
         &__enText {
             height: 4vw;
-            width: fit-content;
+            /*width: fit-content;*/
             margin: 2vw 0;
         }
         &__arrow {
@@ -1337,14 +1342,14 @@
                 width: 20vw;
                 left: 8vw;
                 top: -4vw;
-                height: fit-content;
+                /*height: fit-content;*/
             }
             & h2 {
                 margin: 0 auto;
                 text-align: center;
-                font-size: min(4.2vw,27px);
+                font-size: min(5.5vw,25px);
                 letter-spacing: -0.02em;
-                line-height: 4.8vw;
+                line-height: min(6.5vw,28px);
                 color: #fff;
                 font-family: 'Kiwi Maru', serif;
                 font-weight:lighter;
@@ -1409,6 +1414,7 @@
         }
         &__line {
             color: #008000;
+            text-decoration: none;
         }
         &__tel {
             margin-top: 13px;
@@ -1496,7 +1502,7 @@
         }
         &__arrow {
             margin-top: none !important;
-            right: -40px !important;
+            right: -38px;
             &::after {
                 width: 13px !important;
             }
@@ -1645,6 +1651,35 @@
                 background-size: 25px 22.5px;
                 background-size: contain;
                 background-repeat: no-repeat;
+            }
+        }
+    }
+    .p-inquiryFix {
+        &__doc {
+            &::before {
+                top: 20px;
+                left: 50%;
+                width: 26px;
+                height: 22px;
+                background-image: url(../assets/icon/book.PNG);
+                transform: translateX(-75px);
+            }
+        }
+        &__line {
+            &::before {
+                top: 20px;
+                left: 50%;
+                width: 30px;
+                height: 27px;
+                background-image: url(../assets/icon/line-b.PNG);
+                transform: translateX(-75px);
+            }
+        }
+        &__arrow {
+            margin-top: none !important;
+            right: -35px;
+            &::after {
+                width: 13px !important;
             }
         }
     }

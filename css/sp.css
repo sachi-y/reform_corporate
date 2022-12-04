@@ -44,7 +44,6 @@
             animation: change-img-anim 24s infinite;
   }
   .p-slider__box div img {
-    min-width: 460px !important;
     width: 100vw;
     height: 100vh;
     -o-object-fit: cover;
@@ -614,9 +613,7 @@
   .p-menu__box li a img {
     margin-left: 5px;
     height: 10px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    /*width: fit-content;*/
   }
   .p-menu__accesSns {
     display: flex;
@@ -776,15 +773,18 @@
     padding: 0 20px;
   }
   .p-possible h2 {
+    text-align: center;
     position: relative;
-    margin-top: 10px !important;
     margin: 0 auto;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    font-size: 18px;
+    letter-spacing: 2 !important;
+    white-space: nowrap;
+    line-height: 28px;
+    font-size: min(5vw, 20px) !important;
     color: #333;
-    font-family: "Kosugi Maru", sans-serif;
+    font-family: "Kosugi Maru", sans-serif !important;
+  }
+  .p-possible h2 br {
+    display: block !important;
   }
   .p-possible p {
     margin: 10px auto 0 auto;
@@ -822,9 +822,7 @@
     text-align: center;
     position: relative;
     margin: 0 auto;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 315px;
     letter-spacing: 2 !important;
     line-height: 28px;
     font-size: 20px !important;
@@ -912,7 +910,8 @@
     height: 37vw;
     border-radius: 50%;
     background-color: #FFF;
-    outline: 0.5vw solid #B6B771;
+    /*outline: 0.5vw solid #B6B771;*/
+    border: 0.5vw solid #B6B771;
   }
   .p-how__circle p {
     text-align: center;
@@ -942,9 +941,7 @@
   }
   .p-how__enText {
     height: 4vw;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    /*width: fit-content;*/
     margin: 2vw 0;
   }
   .p-how__arrow {
@@ -1487,16 +1484,14 @@
     width: 20vw;
     left: 8vw;
     top: -4vw;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    /*height: fit-content;*/
   }
   .p-inquiry__left h2 {
     margin: 0 auto;
     text-align: center;
-    font-size: min(4.2vw, 27px);
+    font-size: min(5.5vw, 25px);
     letter-spacing: -0.02em;
-    line-height: 4.8vw;
+    line-height: min(6.5vw, 28px);
     color: #fff;
     font-family: "Kiwi Maru", serif;
     font-weight: lighter;
@@ -1560,6 +1555,7 @@
   }
   .p-inquiry__line {
     color: #008000;
+    text-decoration: none;
   }
   .p-inquiry__tel {
     margin-top: 13px;
@@ -1647,7 +1643,7 @@
   }
   .p-inquiryFix__arrow {
     margin-top: none !important;
-    right: -40px !important;
+    right: -38px;
   }
   .p-inquiryFix__arrow::after {
     width: 13px !important;
@@ -1795,6 +1791,29 @@
     background-size: 25px 22.5px;
     background-size: contain;
     background-repeat: no-repeat;
+  }
+  .p-inquiryFix__doc::before {
+    top: 20px;
+    left: 50%;
+    width: 26px;
+    height: 22px;
+    background-image: url(../assets/icon/book.PNG);
+    transform: translateX(-75px);
+  }
+  .p-inquiryFix__line::before {
+    top: 20px;
+    left: 50%;
+    width: 30px;
+    height: 27px;
+    background-image: url(../assets/icon/line-b.PNG);
+    transform: translateX(-75px);
+  }
+  .p-inquiryFix__arrow {
+    margin-top: none !important;
+    right: -35px;
+  }
+  .p-inquiryFix__arrow::after {
+    width: 13px !important;
   }
   .c-arrow5 {
     display: inline-block;

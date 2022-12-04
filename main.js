@@ -38,7 +38,7 @@ $(function() {
     var headFixed = $(".p-headerFix");
 	$(window).on('load scroll', function () {
 		//現在の位置が700px以上かつ、クラスfixedが付与されていない時
-		if($(this).scrollTop() > 950 && headFixed.hasClass('is-fixed') == false) {
+		if($(this).scrollTop() > 700 && headFixed.hasClass('is-fixed') == false) {
             //headerの高さ分上に設定
             headFixed.css({"top": '-90px',"display":'flex'});
             //クラスfixedを付与
@@ -47,7 +47,7 @@ $(function() {
 			headFixed.animate({"top": 0},600);
 		}
 		//現在の位置が750px以下かつ、クラスfixedが付与されている時にfixedを外す
-		else if($(this).scrollTop() < 750 && headFixed.hasClass('is-fixed') == true){
+		else if($(this).scrollTop() < 700 && headFixed.hasClass('is-fixed') == true){
 			headFixed.removeClass('is-fixed');
             headFixed.css({"display": 'none'});
 		}
@@ -75,6 +75,7 @@ $(function() {
 	});
 });
 
+/*sp inquiryFix*/
 const allHeight = Math.max(
     document.body.scrollHeight, document.documentElement.scrollHeight,
     document.body.offsetHeight, document.documentElement.offsetHeight,
@@ -172,12 +173,14 @@ $(function(){
 
 $(function() {
     $(".triggerBg1").hover(function() {
-        $(".p-living__changeImage").attr("src","assets/photo/work-bg.PNG");
+        $(".p-living__changeImage1").addClass('is-activeBg');
+        $(".p-living__changeImage2").removeClass('is-activeBg');
         $(".head1").addClass("activeHead");
         $(".head2").removeClass("activeHead");
     });
     $(".triggerBg2").hover(function() {
-        $(".p-living__changeImage").attr("src","assets/photo/work-bg2.PNG");
+        $(".p-living__changeImage2").addClass('is-activeBg');
+        $(".p-living__changeImage1").removeClass('is-activeBg');
         $(".head2").addClass("activeHead");
         $(".head1").removeClass("activeHead");
     });
@@ -200,18 +203,6 @@ $(function () {
         });
     };
 });
-
-/*$(function(){
-$(".c-btn__detailLink").hover(
-    function () {
-        // hoverした時の処理(classを付与)
-        $(".c-btn__detail").addClass("c-btn__detailJs");
-    },
-    function () {
-        // hoverを外した時の処理(classを外す)
-        $(".c-btn__detail").removeClass("c-btn__detailJs");
-    });
-});*/
 
 $(function(){
     var pagetop = $('.u-pagetop');
