@@ -1218,6 +1218,7 @@
   }
   .p-inquiry__line {
     color: #008000;
+    text-decoration: none;
   }
   .p-inquiry__tel {
     margin-top: 13px;
