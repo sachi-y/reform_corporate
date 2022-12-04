@@ -738,6 +738,7 @@
   }
   .p-concept p {
     font-size: 14px;
+    font-family: Arial;
     margin-top: 23px;
     letter-spacing: 0.01rem;
     line-height: 2.1;
@@ -791,6 +792,7 @@
     text-align: left !important;
     line-height: 2;
     font-size: 14px;
+    font-family: Arial;
     text-align: center;
     color: #333;
   }
@@ -987,6 +989,7 @@
     text-align: left !important;
     line-height: 2;
     font-size: 13.5px;
+    font-family: Arial;
     margin-top: 17px;
     color: #FFF;
   }
@@ -1200,6 +1203,7 @@
     padding: 0 10px 0 0;
     letter-spacing: 1px;
     font-size: 12px;
+    font-family: Arial;
     margin-top: 25px;
     line-height: 1.67;
   }
@@ -1298,6 +1302,7 @@
     text-align: center;
     margin-top: 20px;
     font-size: 11px;
+    font-family: Arial;
     letter-spacing: 1.5px;
   }
   .p-custom__inner p span {
@@ -1424,6 +1429,7 @@
     position: relative;
     display: block;
     font-size: 12px;
+    font-family: Arial;
   }
   .p-living__name::before {
     content: "";
@@ -1440,6 +1446,7 @@
     margin-top: 20px;
     margin-left: -8px;
     font-size: 13px;
+    font-family: Arial;
     line-height: 1.5;
     letter-spacing: 1px;
   }
@@ -1524,6 +1531,7 @@
   }
   .p-inquiry__btn p {
     font-size: 17px;
+    font-family: Arial;
     text-align: center;
     position: relative;
   }
@@ -1560,6 +1568,7 @@
   .p-inquiry__tel {
     margin-top: 13px;
     font-size: 13px;
+    font-family: Arial;
     letter-spacing: 0.1em;
     text-align: center;
   }
@@ -1666,6 +1675,7 @@
     display: flex;
     align-items: center;
     font-size: 8px !important;
+    font-family: Arial;
     padding-bottom: 50px;
     justify-content: center;
     width: 86px;
@@ -1737,6 +1747,7 @@
     margin-top: 10px;
     text-align: center;
     font-size: 11px;
+    font-family: Arial;
     line-height: 2;
   }
   .p-company__contentItem2 {
@@ -1770,6 +1781,7 @@
     text-align: center;
     border-radius: 50%;
     font-size: 8px;
+    font-family: Arial;
     background-color: #fff;
   }
 }

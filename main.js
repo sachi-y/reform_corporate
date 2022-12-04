@@ -192,16 +192,20 @@ $(function () {
     //ここにスマホ・タブレットの時のjs
     } else {
     //ここにPCの時のjs
-    $(".c-btn__detailLink").hover(
+    $(".p-service__detailLink").hover(
         function () {
             // hoverした時の処理(classを付与)
-            $(".c-btn__detail").addClass("c-btn__detailJs");
+            $(".p-service__detail").toggleClass("c-btn__detailJs");
         },
+    )
+    $(".p-custom__detailLink").hover(
         function () {
-            // hoverを外した時の処理(classを外す)
-            $(".c-btn__detail").removeClass("c-btn__detailJs");
-        });
-    };
+            // hoverした時の処理(classを付与)
+            $(".p-custom__detail").toggleClass("c-btn__detailJs");
+        },
+    )
+
+};
 });
 
 $(function(){

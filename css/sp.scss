@@ -597,6 +597,7 @@
         }
         & p {
             font-size: 14px;
+            font-family: Arial;
             margin-top: 23px;
             letter-spacing: 0.01rem;
             line-height: 2.1;
@@ -650,6 +651,7 @@
             text-align: left !important;
             line-height: 2;
             font-size: 14px;
+            font-family: Arial;
             text-align: center;
             color: #333;
             & br {
@@ -846,6 +848,7 @@
             text-align: left !important;
             line-height: 2;
             font-size: 13.5px;
+            font-family: Arial;
             margin-top: 17px;
             color: #FFF;
             & br {
@@ -1059,6 +1062,7 @@
                 padding: 0 10px 0 0;
                 letter-spacing: 1px;
                 font-size: 12px;
+                font-family: Arial;
                 margin-top: 25px;
                 line-height: 1.67;
                 & br {
@@ -1156,6 +1160,7 @@
                 text-align: center;
                 margin-top: 20px;
                 font-size: 11px;
+                font-family: Arial;
                 letter-spacing: 1.5px;
                 & span {
                     line-height: 28px;
@@ -1283,6 +1288,7 @@
             position: relative;
             display: block;
             font-size: 12px;
+            font-family: Arial;
             &::before {
                 content: '';
                 position: absolute;
@@ -1299,6 +1305,7 @@
             margin-top: 20px;
             margin-left: -8px;
             font-size: 13px;
+            font-family: Arial;
             line-height: 1.5;
             letter-spacing: 1px;
             & br {
@@ -1382,6 +1389,7 @@
             }*/
             & p {
                 font-size: 17px;
+                font-family: Arial;
                 text-align: center;
                 position: relative;
                 &::before {
@@ -1419,6 +1427,7 @@
         &__tel {
             margin-top: 13px;
             font-size: 13px;
+            font-family: Arial;
             letter-spacing: 0.1em;
             text-align: center;
         }
@@ -1525,6 +1534,7 @@
             display: flex;
             align-items: center;
             font-size: 8px !important;
+            font-family: Arial;
             padding-bottom: 50px;
             justify-content: center;
             width: 86px;
@@ -1596,6 +1606,7 @@
             margin-top: 10px;
             text-align: center;
             font-size: 11px;
+            font-family: Arial;
             line-height: 2;
         }
         &__contentItem2 {
@@ -1630,6 +1641,7 @@
         text-align: center;
         border-radius: 50%;
         font-size: 8px;
+        font-family: Arial;
         background-color: #fff;
     }
 }

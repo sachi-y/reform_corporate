@@ -446,6 +446,7 @@
     font-family: "Kiwi Maru", serif;
   }
   .p-concept p {
+    font-family: Arial;
     margin-top: 30px;
     letter-spacing: 3.3px;
     line-height: 2.25;
@@ -480,6 +481,7 @@
     font-family: "Kiwi Maru", serif;
   }
   .p-possible p {
+    font-family: Arial;
     margin: 50px auto;
     line-height: 2.35;
     font-size: 14px;
@@ -632,6 +634,7 @@
     margin-top: 17px;
     letter-spacing: 0.2rem;
     font-size: 16px;
+    font-family: Arial;
     line-height: 32px;
     color: #FFF;
   }
@@ -773,7 +776,9 @@
   .p-service__contentInner p {
     padding: 0 45px 0 1px;
     letter-spacing: 2px;
-    font-size: 14.5px;
+    font-size: 14px;
+    white-space: nowrap;
+    font-family: Arial;
     margin-top: 45px;
     line-height: 1.67;
   }
@@ -891,6 +896,7 @@
     height: 100%;
   }
   .p-custom__inner p {
+    font-family: Arial;
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
@@ -913,6 +919,7 @@
     background-size: cover;
   }
   .p-living__bgWrap {
+    font-family: Arial;
     z-index: 1;
     overflow: hidden;
     margin-top: 72px;
@@ -1074,6 +1081,7 @@
     position: relative;
     display: block;
     font-size: 13px;
+    font-family: Arial;
   }
   .p-living__name::before {
     content: "";
@@ -1090,6 +1098,7 @@
     margin-top: 33px;
     margin-left: 0;
     font-size: 18px;
+    font-family: Arial;
     line-height: 1.8;
     letter-spacing: 0.16rem;
   }
@@ -1188,6 +1197,7 @@
     background-repeat: no-repeat;
   }
   .p-inquiry__btn p {
+    font-family: Arial;
     font-size: 20px;
     text-align: center;
   }
@@ -1212,6 +1222,7 @@
   .p-inquiry__tel {
     margin-top: 13px;
     font-size: 20px;
+    font-family: Arial;
     letter-spacing: 0.1em;
   }
   .p-inquiry__tel br {
@@ -1256,6 +1267,7 @@
     display: flex;
     align-items: center;
     font-size: 10px;
+    font-family: Arial;
     padding-bottom: 20px;
     justify-content: center;
     width: 86px;
@@ -1317,6 +1329,7 @@
     display: block;
     text-align: left;
     font-size: 13.5px;
+    font-family: Arial;
     margin-left: 32px;
     padding-left: 28px;
     border-left: 1px solid #656161;
@@ -1340,6 +1353,7 @@
     margin-top: -4px;
     list-style: none;
     font-size: 13.5px;
+    font-family: Arial;
   }
   .p-company__nav li {
     margin-left: 34px;
@@ -1363,6 +1377,7 @@
     text-align: center;
     border-radius: 50%;
     font-size: 10px;
+    font-family: Arial;
     background-color: #fff;
   }
   .c-btn__detailLink:hover .c-arrow4 {
